@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #746060;
+}
+header{
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 99;
+    background-color: #6e2323;
+}
+.nav{
+    max-width:1200px;
+    margin: auto;
+    display:flex;
+    width:100%;
+    height:50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ .logo{
+    font-size:1.1rem; 
+    font-weight:500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+
+}
+.box{
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    
+    position:relative;
+    
+   
+}
+.cart-count{
+ position: absolute;
+ background-color: #219718;
+ top:-7px;
+ right: 0;
+ padding:3px;
+ border-radius: 50%;
+ line-height:20px;
+ height:20px;
+ width:20px;
+ z-index:99;
+ 
+}
+#cart-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap:1.5rem;
+    justify-content: center;
+    align-content: center;
+
+}
+.container{
+    max-width: 1200px;
+    padding:4rem;
+    margin:auto;
+    width:100%;
+    
+
+}
+h2.title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom:1.5rem;
+    color:#ffffff;
+
+
+}
+
+.foot-box{
+    position:relative;
+    background-color: #fff;
+    padding:10px;
+    box-shadow: 0 1px 4px rgba(40,37,37,0.1);
+    border-radius:3px;
+
+}
+.pic{
+    overflow:hidden;
+
+}
+.pic:hover img{
+    transform:scale(1.5);
+  
+}
+.food-img{
+    transition:0.4s;
+
+}
+.food-title{
+    font-size:1rem;
+    font-weight:600 ;
+    color: #6e2323;
+}
+.food-title{
+    font-weight: 500px;
+}
+.add-cart{
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:10px;
+    background-color: #6cd637;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.add-cart:hover{
+     background-color: #6e2323;
+}
+.cart{
+    position:fixed;
+    top:0;
+    right:-100%;
+    height:100vh;
+    width:400px;
+    background-color: #ffffff;
+    color: #110e0e;
+    padding:20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    z-index:100;
+    box-shadow: 0 1px 4px rgba(40,37,37,0.1);
+    text-align: left;
+}
+.cart-active{
+    right:0%;
+    transition:0.4s;
+
+
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+
+    
+}
+.cart-img{
+    width:100%;
+    height :75%;
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.1);
+    padding:5px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+
+}
+.price-box{
+    display:flex;
+    justify-content: space-between;
+}
+.cart-food-title{
+    font-size:1rem;
+    text-transform: uppercase;
+    color: #6e2323;
+    font-weight: 500;
+}
+.cart-price{
+    font-weight: 500;
+    color: #010101;
+}
+.cart-quantity{
+    border:1px solid rgba(0,0,0,0.1);
+    outline:none;
+    width: 2.4rem;
+    text-align: center;
+    font-size:1rem;
+}
+.cart-remove{
+    font-size:24px;
+    color:red;
+    cursor: pointer;
+}
+
+.total{
+display:flex;
+justify-content: flex-end;
+margin-top:1rem;
+
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+    
+
+}
+
+.total-price{
+    margin-left: 0.5rem;
+
+}
+.btn-buy{
+    padding: 0.7rem;
+    border:none;
+    background-color: #6f4646;
+    font-weight: 600;
+    color: #ffffff;
+    
+
+
+}
+#cart-close{
+    position:absolute;
+    top:1.5rem;
+    right:0.8rem;
+    font-size:1.7rem;
+    cursor:pointer;
+    font-weight: bold;
+
+}
