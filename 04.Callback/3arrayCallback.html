@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filterArray(arr,callback){
+            let res=[];
+            for(let i of arr){
+                if(callback(i)){
+                    res.push(i);
+                }
+            }
+            console.log("REsult arr "+res);
+            document.writeln("Passed Marks: " + res);
+        }
+        function even(i){
+            if (i%2==0){
+                return true;
+            }
+            return false;
+        }
+        const passMRk=(i)=>i>75;
+        score=[85,92,72,10,60];
+        filterArray(score,passMRk);
+
+ 
+    </script>
+    
+</body>
+</html>

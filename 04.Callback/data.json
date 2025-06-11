@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Saai",
+      "email": "saai@example.com",
+      "age": 22,
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Tony Stark",
+      "email": "tony@starkindustries.com",
+      "age": 48,
+      "role": "editor"
+    },
+    {
+      "id": 3,
+      "name": "Steve Rogers",
+      "email": "steve@avengers.com",
+      "age": 105,
+      "role": "viewer"
+    },
+    {
+      "id": 4,
+      "name": "Bruce Wayne",
+      "email": "bruce@wayneenterprises.com",
+      "age": 42,
+      "role": "admin"
+    },
+    {
+      "id": 5,
+      "name": "Clark Kent",
+      "email": "clark@dailyplanet.com",
+      "age": 39,
+      "role": "editor"
+    },
+    {
+      "id": 6,
+      "name": "Diana Prince",
+      "email": "diana@themiscira.com",
+      "age": 3000,
+      "role": "viewer"
+    },
+    {
+      "id": 7,
+      "name": "Peter Parker",
+      "email": "peter@spidey.com",
+      "age": 21,
+      "role": "viewer"
+    },
+    {
+      "id": 8,
+      "name": "Natasha Romanoff",
+      "email": "natasha@shield.com",
+      "age": 35,
+      "role": "editor"
+    },
+    {
+      "id": 9,
+      "name": "Barry Allen",
+      "email": "barry@ccpd.com",
+      "age": 28,
+      "role": "viewer"
+    },
+    {
+      "id": 10,
+      "name": "Stephen Strange",
+      "email": "strange@sanctum.com",
+      "age": 45,
+      "role": "admin"
+    }
+  ]
+}

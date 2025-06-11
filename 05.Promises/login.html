@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Script loaded!");
+
+        function login(user,pass){
+            return new Promise (function(resolve,reject){
+                if (user==="admin" && pass==="1234") {
+      resolve("Login successful!");
+    } else {
+      reject("Invalid username or password.");
+    }
+            });
+        }
+        login("admin","1234")
+        .then(function(message){
+            alert(message);
+
+        })
+        .catch(function(error){alert(error);
+
+        });
+    </script>
+    
+</body>
+</html>

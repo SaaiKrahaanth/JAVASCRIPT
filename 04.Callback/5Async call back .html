@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name,callback){
+            console.log("greet started");
+            setInterval(() => {console.log("hello "+name);
+            callback(name);
+                
+            }, 2000);
+            
+        }
+        function greetCallBack(name){
+            console.log("hi da "+name)
+        }
+        greet("saai",greetCallBack);
+
+    </script>
+    
+</body>
+</html>
