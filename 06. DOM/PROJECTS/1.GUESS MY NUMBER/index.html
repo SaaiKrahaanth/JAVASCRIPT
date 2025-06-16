@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess my number</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 2px;
+            margin: 1mm;
+            
+        }
+        nav,.io{
+            display:flex;
+            justify-content: space-between;
+
+        }
+        .alert-box{
+            background: #fbfbfb;
+            color: black;
+            padding: 1rem;
+            width: auto;
+            height: 30px;
+            text-align: center;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+        .description{
+            padding: 1rem;
+            width: 40;
+            height: 30px;
+            text-align: center;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .heading{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 1rem;
+            height:50px;
+
+
+
+        }
+
+        .input{
+            display: flex;
+            flex-direction: column;
+        }
+        .output{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="alert-box">Again!</div>
+        <div class="description">&ltBetween 1 to 20&gt</div>
+    </nav>
+
+    <div class="heading">Guess My Number!</div>
+    
+    <div class="logo">
+        ?
+    </div>
+
+    <div class="io">
+        <div class="input">    
+            <input type="number" name="input-num" id="input-num">
+            <button>check</button>  
+        </div>
+
+        
+        <div class="output">
+            <div id="result">Enter Number!</div>
+            <div id="Score">Score: </div>
+            <div id="Highscore">Highscore: </div> 
+        </div> 
+    </div>
+</body>
+</html>
