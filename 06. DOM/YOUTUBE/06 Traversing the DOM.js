@@ -6,3 +6,6 @@
     itemList.children[1].style.backgroundColor = "black";
     //first element style
     itemList.firstElementChild.style.backgroundColor = "black";
+
+    console.log(itemList.childElementCount.nextSibling);
+

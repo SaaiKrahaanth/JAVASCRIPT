@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.multiRootWorkspaceName": "YOUTUBE"
+  "liveServer.settings.multiRootWorkspaceName": "YOUTUBE",
+  "livePreview.defaultPreviewPath": "/index.html"
 }
