@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Buttons</title>
+  <style>
+    .btns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .btn1,
+    .btn2 {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn2 {
+      background-color: #f44336;
+    }
+
+    .btn1:hover,
+    .btn2:hover {
+      opacity: 0.8;
+    }
+        .secret {
+      color: #ffffff;
+    }
+
+    .secret:hover {
+      color: red; /* Reveal on hover */
+    }
+  </style>
+</head>
+<body>
+<p class="secret">🔐 Button 1 (btn1) to be clicked 3 times.
+Button 2 (btn2) to be clicked 2 times.
+Only then, it should open the secret HTML page.</p>
+  <div class="btns">
+    <button class="btn1">Left</button>
+    <button class="btn2">Right</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
